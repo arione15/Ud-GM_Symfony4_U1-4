@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Arme
+{% endblock %}
+{% block monTitre %}
+	Nom de l'arme :
+	
+{% endblock %}
+
+{% block body %}
+
+<div class="row">
+	<div class="col-2">
+		
+	<div class="col">
+		<h3>Les caractéristiques</h2>
+		<ul>
+			<li>Description :
+			<li>Dégât :
+				{{ armeee.degat }}</li>
+		</ul>
+	</div>
+</div>
+
+{% endblock %}

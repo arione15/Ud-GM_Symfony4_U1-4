@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Personnages
+{% endblock %}
+
+{% block monTitre %}Nom du personnage :
+	{{ nammame.nom }}
+{% endblock %}
+
+{% block body %}
+	<div class="row">
+		<div class="col-2">
+			<img src="{{ asset('images/personnages/' ~ nammame.nom ~ '.png') }}">
+		</div>
+		<div class="col">
+			<h2>Les caratctéristique :</h2>
+            <div></div>
+			<ul>
+				<li>Age : {{ nammame.age }}</li>
+				<li> 
+				</li>
+				<li>Force : {{ nammame.carac.force }}</li>
+				<li>Agilité : {{ nammame.carac.agil }}</li>
+				<li>Intélligence : {{ nammame.carac.intel }}</li>
+			</ul>
+		</div>
+	</div>
+
+{% endblock %}
